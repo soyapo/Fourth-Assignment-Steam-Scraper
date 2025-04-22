@@ -19,7 +19,7 @@ public class ParserTest {
 
     @Test
     public void testSortByName() {
-        List<Game> sortedGames = handle.sortByName();
+        List<Game> sortedGames = handle.sortByName(1);
         Game g1 = new Game("Bloodborne" ,4.8,88);
         Game g2 = new Game("Gran Turismo 2" ,4.6,90);
         Game g3 = new Game("Resident Evil Code: Veronica" ,4.6,85);
@@ -38,7 +38,7 @@ public class ParserTest {
 
         @Test
         public void testSortByPrice() {
-            List<Game> sortedGames = handle.sortByPrice();
+            List<Game> sortedGames = handle.sortByPrice(1);
             Game g1 = new Game("Tekken 3" ,4.4,91);
             Game g2 = new Game("The Legend of Zelda: The Wind Waker" ,4.8,90);
             Game g3 = new Game("Advance Wars" ,4.7,89);
@@ -57,7 +57,7 @@ public class ParserTest {
 
     @Test
     public void testSortByRating() {
-        List<Game> sortedGames = handle.sortByRating();
+        List<Game> sortedGames = handle.sortByRating(2);
         Game g1 = new Game("God of War II" ,4.9,90);
         Game g2 = new Game("Diablo" ,4.8,87);
         Game g3 = new Game("Advance Wars" ,4.7,89);
